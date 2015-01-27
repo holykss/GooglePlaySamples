@@ -74,6 +74,10 @@ public class GameplayFragment extends Fragment implements OnClickListener {
         if (scoreInput != null) scoreInput.setText(String.format("%04d", mRequestedScore));
     }
 
+    public void onDigitClicked(View view) {
+    	onClick(view);
+    }
+    
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
